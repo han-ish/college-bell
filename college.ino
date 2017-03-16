@@ -33,7 +33,7 @@ void setup() {
 
 void loop() {
   tmElements_t tm;
-
+  // reading the time from the RTC
   if (RTC.read(tm)) {
     lcd.setCursor(0,0);
     lcd.print("   UCC MCA  ");
